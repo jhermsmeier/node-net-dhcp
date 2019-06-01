@@ -1,0 +1,26 @@
+{
+  "name": "dhcp",
+  "version": "0.0.0",
+  "description": "DHCP",
+  "author": "Jonas Hermsmeier <jhermsmeier@gmail.com> (https://jhermsmeier.de)",
+  "license": "MIT",
+  "keywords": [
+    "dhcp"
+  ],
+  "main": "lib/dhcp.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^6.1.4"
+  },
+  "homepage": "https://github.com/jhermsmeier/node-dhcp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jhermsmeier/node-dhcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jhermsmeier/node-dhcp/issues"
+  }
+}
