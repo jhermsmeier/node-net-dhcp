@@ -1,21 +1,21 @@
 # DHCP
-[![npm](https://img.shields.io/npm/v/dhcp.svg?style=flat-square)](https://npmjs.com/package/dhcp)
-[![npm license](https://img.shields.io/npm/l/dhcp.svg?style=flat-square)](https://npmjs.com/package/dhcp)
-[![npm downloads](https://img.shields.io/npm/dm/dhcp.svg?style=flat-square)](https://npmjs.com/package/dhcp)
-[![build status](https://img.shields.io/travis/jhermsmeier/node-dhcp/master.svg?style=flat-square)](https://travis-ci.org/jhermsmeier/node-dhcp)
+[![npm](https://img.shields.io/npm/v/net-dhcp.svg?style=flat-square)](https://npmjs.com/package/net-dhcp)
+[![npm license](https://img.shields.io/npm/l/net-dhcp.svg?style=flat-square)](https://npmjs.com/package/net-dhcp)
+[![npm downloads](https://img.shields.io/npm/dm/net-dhcp.svg?style=flat-square)](https://npmjs.com/package/net-dhcp)
+[![build status](https://img.shields.io/travis/jhermsmeier/node-net-dhcp/master.svg?style=flat-square)](https://travis-ci.org/jhermsmeier/node-net-dhcp)
 
 Dynamic Host Configuration Protocol (DHCP)
 
 ## Install via [npm](https://npmjs.com)
 
 ```sh
-$ npm install --save dhcp
+$ npm install --save net-dhcp
 ```
 
 ## Usage
 
 ```js
-var DHCP = require( 'dhcp' )
+var DHCP = require( 'net-dhcp' )
 ```
 
 ## References

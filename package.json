@@ -1,5 +1,5 @@
 {
-  "name": "dhcp",
+  "name": "net-dhcp",
   "version": "0.0.0",
   "description": "DHCP",
   "author": "Jonas Hermsmeier <jhermsmeier@gmail.com> (https://jhermsmeier.de)",
@@ -15,12 +15,12 @@
   "devDependencies": {
     "mocha": "^6.1.4"
   },
-  "homepage": "https://github.com/jhermsmeier/node-dhcp",
+  "homepage": "https://github.com/jhermsmeier/node-net-dhcp",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jhermsmeier/node-dhcp.git"
+    "url": "https://github.com/jhermsmeier/node-net-dhcp.git"
   },
   "bugs": {
-    "url": "https://github.com/jhermsmeier/node-dhcp/issues"
+    "url": "https://github.com/jhermsmeier/node-net-dhcp/issues"
   }
 }
