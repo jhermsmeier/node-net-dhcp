@@ -1,6 +1,6 @@
 {
   "name": "net-dhcp",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "DHCP",
   "author": "Jonas Hermsmeier <jhermsmeier@gmail.com> (https://jhermsmeier.de)",
   "license": "MIT",
