@@ -1,8 +1,8 @@
 # DHCP
-[![npm](https://img.shields.io/npm/v/net-dhcp.svg?style=flat-square)](https://npmjs.com/package/net-dhcp)
-[![npm license](https://img.shields.io/npm/l/net-dhcp.svg?style=flat-square)](https://npmjs.com/package/net-dhcp)
-[![npm downloads](https://img.shields.io/npm/dm/net-dhcp.svg?style=flat-square)](https://npmjs.com/package/net-dhcp)
-[![build status](https://img.shields.io/travis/jhermsmeier/node-net-dhcp/master.svg?style=flat-square)](https://travis-ci.org/jhermsmeier/node-net-dhcp)
+[![npm](https://flat.badgen.net/npm/v/net-dhcp)](https://npmjs.com/package/net-dhcp)
+[![npm license](https://flat.badgen.net/npm/l/net-dhcp)](https://npmjs.com/package/net-dhcp)
+[![npm downloads](https://flat.badgen.net/npm/dm/net-dhcp)](https://npmjs.com/package/net-dhcp)
+[![build status](https://flat.badgen.net/travis/jhermsmeier/node-net-dhcp/master)](https://travis-ci.org/jhermsmeier/node-net-dhcp)
 
 Dynamic Host Configuration Protocol (DHCP)
 
