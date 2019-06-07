@@ -5,7 +5,14 @@
   "author": "Jonas Hermsmeier <jhermsmeier@gmail.com> (https://jhermsmeier.de)",
   "license": "MIT",
   "keywords": [
-    "dhcp"
+    "dhcp",
+    "dynamic",
+    "host",
+    "configuration",
+    "protocol",
+    "net",
+    "network",
+    "management",
   ],
   "main": "lib/dhcp.js",
   "scripts": {
