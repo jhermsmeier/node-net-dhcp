@@ -12,10 +12,38 @@ Dynamic Host Configuration Protocol (DHCP)
 $ npm install --save net-dhcp
 ```
 
+----------
+
+**NOTE:** This is still a work-in-progress; only message receipt and parsing is implemented at the time. The plan is to arrive at a fully functioning DHCP client & server implementation.
+
+----------
+
+## Examples
+
+- `example/monitor`: Monitor the network for DHCP messages
+
 ## Usage
 
 ```js
 var DHCP = require( 'net-dhcp' )
+```
+
+```js
+var client = new DHCP.Client()
+
+client.on( 'error', ( error ) => {
+  console.log( error )
+})
+
+client.on( 'message', ( message, rinfo ) => {
+  console.log( 'Message from', rinfo, inspect( message ) )
+})
+
+client.on( 'listening', ( socket ) => {
+  console.log( 'Listening on', socket.address() )
+})
+
+client.listen()
 ```
 
 ## References
