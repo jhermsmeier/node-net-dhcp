@@ -12,7 +12,7 @@
     "protocol",
     "net",
     "network",
-    "management",
+    "management"
   ],
   "main": "lib/dhcp.js",
   "scripts": {
