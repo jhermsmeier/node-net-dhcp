@@ -15,14 +15,24 @@ client.on( 'listening', ( socket ) => {
 
 server.on( 'message', ( message, rinfo ) => {
   console.log( 'Client message from', rinfo, inspect( message ) )
+  var info = {
+    type: type[ message.data.get( 53 ) ],
+    name: message.data.get( 12 ),
+    address: message.data.get( 50 ) || '',
+    yourAddress: message.yiaddr,
+    device: message.chaddr,
+  }
+  log.write( `${message.chaddr}\t${message.data.get( 12 )}\n` )
+  console.log( `${message.chaddr}\t${message.data.get( 12 )}` )
+  // console.log( 'Client message from', inspect( info ) )
+  // var str = `${info.type} ${ info.yourAddress ? `for ${info.yourAddress}` : '' } to ${ info.name || message.yiaddr }`
+  // console.log( `CLIENT:`, str, `(${info.device})` )
+  // say.write( str )
 })
 
 server.on( 'listening', ( socket ) => {
   console.log( 'Server listening on', socket.address() )
 })
-
-// '24:df:6a:86:49:bf' -> HUAWEI_P8
-// '38:f2:3e:86:83:a0' -> Windows Phone
 
 client.listen()
 server.listen()
