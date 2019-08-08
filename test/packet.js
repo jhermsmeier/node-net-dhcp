@@ -10,7 +10,7 @@ describe( 'DHCP.Packet', function() {
 
     var filename = path.join( __dirname, 'data', 'ack.bin' )
     var buffer = fs.readFileSync( filename )
-    var packet = DHCP.Packet.parse( buffer )
+    var packet = DHCP.Packet.decode( buffer )
 
     inspect.log( packet )
 
