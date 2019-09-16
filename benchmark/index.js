@@ -1,21 +1,7 @@
 var fs = require( 'fs' )
 var path = require( 'path' )
+var bench = require( 'nanobench' )
 var DHCP = require( '..' )
-
-function bench( name, fn ) {
-
-  var run = {
-    begin: () => { time = process.hrtime() },
-    end: () => {
-      time = process.hrtime( time )
-      var ms = ( time[0] * 1e3 ) + ( time[1] / 1e6 )
-      console.log( name, ms.toFixed( 2 ), 'ms' )
-    },
-  }
-
-  fn( run )
-
-}
 
 const ITERATIONS = 1000000
 
@@ -26,9 +12,22 @@ bench( `DHCP.Packet#parse() ⨉ ${ITERATIONS}`, ( run ) => {
 
   var packet = new DHCP.Packet()
 
-  run.begin()
+  run.start()
   for( var i = 0; i < ITERATIONS; i++ ) {
     packet.parse( buffer, 0 )
+  }
+  run.end()
+
+})
+
+bench( `DHCP.Packet#write() ⨉ ${ITERATIONS}`, ( run ) => {
+
+  var packet = DHCP.Packet.decode( buffer )
+  var output = Buffer.alloc( buffer.length )
+
+  run.start()
+  for( var i = 0; i < ITERATIONS; i++ ) {
+    packet.write( output, 0 )
   }
   run.end()
 
