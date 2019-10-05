@@ -1,6 +1,6 @@
 # DHCP
 [![npm](https://flat.badgen.net/npm/v/net-dhcp)](https://npmjs.com/package/net-dhcp)
-[![npm license](https://flat.badgen.net/npm/l/net-dhcp)](https://npmjs.com/package/net-dhcp)
+[![npm license](https://flat.badgen.net/npm/license/net-dhcp)](https://npmjs.com/package/net-dhcp)
 [![npm downloads](https://flat.badgen.net/npm/dm/net-dhcp)](https://npmjs.com/package/net-dhcp)
 [![build status](https://flat.badgen.net/travis/jhermsmeier/node-net-dhcp/master)](https://travis-ci.org/jhermsmeier/node-net-dhcp)
 
