@@ -28,6 +28,8 @@ $ npm install --save net-dhcp
 var DHCP = require( 'net-dhcp' )
 ```
 
+### Client
+
 ```js
 var client = new DHCP.Client()
 
@@ -36,7 +38,7 @@ client.on( 'error', ( error ) => {
 })
 
 client.on( 'message', ( message, rinfo ) => {
-  console.log( 'Message from', rinfo, inspect( message ) )
+  console.log( 'Message from', rinfo, message )
 })
 
 client.on( 'listening', ( socket ) => {
@@ -44,6 +46,31 @@ client.on( 'listening', ( socket ) => {
 })
 
 client.listen()
+```
+
+### Server
+
+```js
+var server = new DHCP.Server()
+
+server.on( 'error', ( error ) => {
+  console.error( '[ERROR]', error )
+})
+
+// Warnings are emitted if a received packet could not be decoded
+server.on( 'warning', ( error, rinfo, rawMessage ) => {
+  console.error( '[WARN]', rinfo, error )
+})
+
+server.on( 'message', ( message, rinfo ) => {
+  console.log( 'Client message from', rinfo, message )
+})
+
+server.on( 'listening', ( socket ) => {
+  console.log( 'Server listening on', socket.address() )
+})
+
+server.listen()
 ```
 
 ## References
